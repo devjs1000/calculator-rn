@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, Text} from 'native-base';
+import { ButtonProps } from './types/ButtonProps';
 
 const TButton = ({title, onPress}: ButtonProps) => {
   return (
@@ -16,7 +17,4 @@ const TButton = ({title, onPress}: ButtonProps) => {
 
 export default TButton;
 
-type ButtonProps = {
-  title: string;
-  onPress: () => void;
-};
+
