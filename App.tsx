@@ -17,6 +17,9 @@ const theme=extendTheme({
       900: '#0D47A1',
     },
   },
+  config: {
+    useSystemColorMode: true
+  }
 })
 
 const NativeBaseIcon = () => {
