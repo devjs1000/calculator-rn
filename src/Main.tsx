@@ -16,10 +16,18 @@ const Main = () => {
     };
   };
 
+  const handleEvaluate = () => {
+    try {
+      setValue(eval(value).toString());
+    } catch (e) {
+      setValue('Error');
+    }
+  };
+
   return (
     <Box position={'absolute'} w={'full'} bottom={'16'}>
       <Screen value={value} onChange={handleScreenChange} />
-      <VStack mt={4} space={4} >
+      <VStack mt={4} space={4}>
         <HStack>
           <TButton onPress={handleButtonPress('1')} title="1" />
           <TButton onPress={handleButtonPress('2')} title="2" />
@@ -36,12 +44,12 @@ const Main = () => {
           <TButton onPress={handleButtonPress('7')} title="7" />
           <TButton onPress={handleButtonPress('8')} title="8" />
           <TButton onPress={handleButtonPress('9')} title="9" />
-          <TButton onPress={handleButtonPress('x')} title="x" />
+          <TButton onPress={handleButtonPress('*')} title="x" />
         </HStack>
         <HStack>
           <TButton onPress={handleButtonPress('0')} title="0" />
           <TButton onPress={handleButtonPress('.')} title="." />
-          <TButton onPress={handleButtonPress('=')} title="=" />
+          <TButton onPress={handleEvaluate} title="=" />
           <TButton onPress={handleButtonPress('/')} title="/" />
         </HStack>
       </VStack>

@@ -4,7 +4,7 @@ import React from 'react';
 const Screen = ({value, onChange}: ScreenProps) => {
   return (
     <Box>
-      <Input bg={'white'} fontSize={'2xl'} mt={16} h={16} {...{value}} onChangeText={onChange} />
+      <Input isReadOnly bg={'white'} fontSize={'2xl'} mt={16} h={16} {...{value}} onChangeText={onChange} />
     </Box>
   );
 };
