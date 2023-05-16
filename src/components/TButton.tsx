@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Icon, IconButton, Text, useColorMode} from 'native-base';
+import {Button, Icon, IconButton} from 'native-base';
 import {ButtonProps} from '../types/ButtonProps';
 import {useColors} from '../theme/colors';
 
