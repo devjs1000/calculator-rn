@@ -9,6 +9,7 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import com.horcrux.svg.SvgPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
